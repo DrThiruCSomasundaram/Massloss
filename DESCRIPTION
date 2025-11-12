@@ -1,0 +1,27 @@
+Package: Massloss
+Type: Package
+Title: Mass Loss Analysis Package
+Version: 0.1.0
+Authors@R: 
+    person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: A package for analyzing mass loss in compositional data. This package 
+    provides functions for calculating mass loss percentages and simulating 
+    compositional decrements to find optimal matches between initial and final 
+    compositional datasets (e.g., protein, lipid, ash, carbohydrate percentages).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.0
+URL: https://github.com/yourusername/Massloss
+BugReports: https://github.com/yourusername/Massloss/issues
+Depends: 
+    R (>= 4.0.0)
+Imports: 
+    utils,
+    stats,
+    graphics,
+    grDevices
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown

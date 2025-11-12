@@ -1,0 +1,30 @@
+{
+  "title": "Massloss: An R Package for Mass Loss Analysis",
+  "description": "An R package for analyzing mass loss data. This package provides functions for processing, analyzing, and visualizing mass loss measurements.",
+  "creators": [
+    {
+      "name": "Your Name",
+      "affiliation": "Your Affiliation",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "R",
+    "mass loss",
+    "data analysis",
+    "statistics",
+    "R-package"
+  ],
+  "license": {
+    "id": "MIT"
+  },
+  "upload_type": "software",
+  "access_right": "open",
+  "communities": [
+    {
+      "identifier": "r-packages"
+    }
+  ],
+  "version": "0.1.0",
+  "language": "eng"
+}

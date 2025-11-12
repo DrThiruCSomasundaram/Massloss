@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.git
+^\.gitignore
+^\.zenodo\.json$
+^README\.md$
+^LICENSE$
+^\.DS_Store$
+^\.Rhistory$

@@ -1,0 +1,13 @@
+citHeader("To cite Massloss in publications use:")
+
+citEntry(entry = "Manual",
+         title = "Massloss: An R Package for Mass Loss Analysis",
+         author = personList(
+           person("Your", "Name", email = "your.email@example.com")
+         ),
+         year = 2024,
+         version = "0.1.0",
+         url = "https://github.com/yourusername/Massloss",
+         textVersion = paste("Your Name (2024). Massloss: An R Package for Mass Loss Analysis.",
+                            "R package version 0.1.0. https://github.com/yourusername/Massloss")
+)
