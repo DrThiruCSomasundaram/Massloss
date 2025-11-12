@@ -15,12 +15,12 @@ A package for analyzing mass loss data. This package provides
 Package: \tab Massloss\cr
 Type: \tab Package\cr
 Version: \tab 0.1.0\cr
-Date: \tab 2024-01-01\cr
+Date: \tab 2025-01-01\cr
 License: \tab MIT\cr
 }
 }
 \author{
-Thiru Somasundaram <thiru.somasundaram@deakin.edu.au>
+Thiru Soma <thiru.somasundaram@deakin.edu.au> and Dave Francis
 }
 \references{
 \url{https://github.com/DrThiruCSomasundaram/Massloss}

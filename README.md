@@ -63,11 +63,11 @@ See `inst/scripts/example_analysis.R` for a complete example of how to use the p
 If you use this package in your research, please cite it as:
 
 ```
-@software{massloss2024,
-  author = {Somasundaram, Thiru},
+@software{massloss2025,
+  author = {Soma, Thiru and Francis, Dave},
   title = {Massloss: An R Package for Mass Loss Analysis},
   version = {0.1.0},
-  year = {2024},
+  year = {2025},
   doi = {10.5281/zenodo.XXXXXXX},
   url = {https://github.com/DrThiruCSomasundaram/Massloss}
 }

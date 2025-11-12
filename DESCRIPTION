@@ -3,8 +3,9 @@ Type: Package
 Title: Mass Loss Analysis Package
 Version: 0.1.0
 Authors@R: 
-    person("Thiru", "Somasundaram", email = "thiru.somasundaram@deakin.edu.au", 
-           role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0447-7634"))
+    c(person("Thiru", "Soma", email = "thiru.somasundaram@deakin.edu.au", 
+             role = c("aut", "cre"), comment = c(ORCID = "0000-0003-0447-7634")),
+      person("Dave", "Francis", role = "aut"))
 Description: A package for analyzing mass loss in compositional data. This package 
     provides functions for calculating mass loss percentages and simulating 
     compositional decrements to find optimal matches between initial and final 

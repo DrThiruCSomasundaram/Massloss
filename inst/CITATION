@@ -3,11 +3,12 @@ citHeader("To cite Massloss in publications use:")
 citEntry(entry = "Manual",
          title = "Massloss: An R Package for Mass Loss Analysis",
          author = personList(
-           person("Thiru", "Somasundaram", email = "thiru.somasundaram@deakin.edu.au")
+           person("Thiru", "Soma", email = "thiru.somasundaram@deakin.edu.au"),
+           person("Dave", "Francis")
          ),
-         year = 2024,
+         year = 2025,
          version = "0.1.0",
          url = "https://github.com/DrThiruCSomasundaram/Massloss",
-         textVersion = paste("Somasundaram, T. (2024). Massloss: An R Package for Mass Loss Analysis.",
+         textVersion = paste("Soma, T. and Francis, D. (2025). Massloss: An R Package for Mass Loss Analysis.",
                             "R package version 0.1.0. https://github.com/DrThiruCSomasundaram/Massloss")
 )

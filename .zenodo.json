@@ -3,9 +3,13 @@
   "description": "An R package for analyzing mass loss in compositional data. This package provides functions for calculating mass loss percentages and simulating compositional decrements to find optimal matches between initial and final compositional datasets (e.g., protein, lipid, ash, carbohydrate percentages).",
   "creators": [
     {
-      "name": "Somasundaram, Thiru",
+      "name": "Soma, Thiru",
       "affiliation": "Deakin University",
       "orcid": "0000-0003-0447-7634"
+    },
+    {
+      "name": "Francis, Dave",
+      "affiliation": "Deakin University"
     }
   ],
   "keywords": [
