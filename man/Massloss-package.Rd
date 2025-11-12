@@ -20,9 +20,9 @@ License: \tab MIT\cr
 }
 }
 \author{
-Your Name <your.email@example.com>
+Thiru Somasundaram <thiru.somasundaram@deakin.edu.au>
 }
 \references{
-\url{https://github.com/yourusername/Massloss}
+\url{https://github.com/DrThiruCSomasundaram/Massloss}
 }
 \keyword{package}

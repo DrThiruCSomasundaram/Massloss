@@ -59,11 +59,11 @@ After creating the GitHub repository, GitHub will show you commands. Use these:
 ```bash
 cd "/Users/thiru.somasundaram/Library/CloudStorage/OneDrive-DeakinUniversity/NuSea.Lab/Associate Research Fellow/Massloss"
 
-# Add remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/YOUR_USERNAME/Massloss.git
+# Add remote
+git remote add origin https://github.com/DrThiruCSomasundaram/Massloss.git
 
 # Or if using SSH:
-# git remote add origin git@github.com:YOUR_USERNAME/Massloss.git
+# git remote add origin git@github.com:DrThiruCSomasundaram/Massloss.git
 
 # Push to GitHub
 git branch -M main  # or master, depending on your default
@@ -111,7 +111,7 @@ Edit `.zenodo.json` with your information:
 
 ## Step 7: Create GitHub Release (This Triggers Zenodo DOI)
 
-1. Go to your GitHub repository: `https://github.com/YOUR_USERNAME/Massloss`
+1. Go to your GitHub repository: `https://github.com/DrThiruCSomasundaram/Massloss`
 2. Click "Releases" → "Create a new release"
 3. **Tag version**: `v0.1.0` (must start with 'v')
 4. **Release title**: `Massloss v0.1.0`
@@ -213,7 +213,7 @@ git push
 
 ## Next Steps After Deployment
 
-1. Share your package: `devtools::install_github("YOUR_USERNAME/Massloss")`
+1. Share your package: `devtools::install_github("DrThiruCSomasundaram/Massloss")`
 2. Add badges to README (build status, etc.)
 3. Consider adding unit tests with `testthat`
 4. Add a vignette for detailed usage examples

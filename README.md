@@ -15,7 +15,7 @@ if (!require("devtools")) {
 }
 
 # Install the package from GitHub
-devtools::install_github("yourusername/Massloss")
+devtools::install_github("DrThiruCSomasundaram/Massloss")
 ```
 
 ### From Source
@@ -64,12 +64,12 @@ If you use this package in your research, please cite it as:
 
 ```
 @software{massloss2024,
-  author = {Your Name},
+  author = {Somasundaram, Thiru},
   title = {Massloss: An R Package for Mass Loss Analysis},
   version = {0.1.0},
   year = {2024},
   doi = {10.5281/zenodo.XXXXXXX},
-  url = {https://github.com/yourusername/Massloss}
+  url = {https://github.com/DrThiruCSomasundaram/Massloss}
 }
 ```
 
@@ -83,4 +83,4 @@ This package is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## Contact
 
-For questions or issues, please open an issue on [GitHub](https://github.com/yourusername/Massloss/issues).
+For questions or issues, please open an issue on [GitHub](https://github.com/DrThiruCSomasundaram/Massloss/issues).
