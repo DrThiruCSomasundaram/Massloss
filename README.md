@@ -35,11 +35,11 @@ data_A <- data.frame(Protein = 20, Lipid = 10, Ash = 5, Carbs = 65)
 data_B <- data.frame(Protein = 15, Lipid = 8, Ash = 4, Carbs = 73)
 
 # Calculate mass loss for each element
-mass_loss <- calculate_compositional_mass_loss(data_A, data_B)
+mass_loss <- lost_mass(data_A, data_B)
 print(mass_loss)
 
 # Example 2: Simulate compositional decrement and find best match
-result <- simulate_compositional_decrement(
+result <- simulate_decrement(
   data_A = data_A,
   data_B = data_B,
   decrement_steps = c(Protein = 0.1, Lipid = 0.01, Ash = 0.1, Carbs = 1)
@@ -55,8 +55,8 @@ See `inst/scripts/example_analysis.R` for a complete example of how to use the p
 
 ## Functions
 
-- `calculate_compositional_mass_loss()`: Calculate mass loss percentage for each element when transitioning from compositional dataset A to B
-- `simulate_compositional_decrement()`: Simulate decrement of compositional data from A to zero, calculate compositional values, and find best matching row that matches B's composition
+- `lost_mass()`: Calculate mass loss percentage for each element when transitioning from compositional dataset A to B
+- `simulate_decrement()`: Simulate decrement of compositional data from A to zero, calculate compositional values, and find best matching row that matches B's composition
 
 ## Citation
 

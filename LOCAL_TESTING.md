@@ -55,11 +55,11 @@ data_B <- data.frame(
 )
 
 # Test Function 1: Calculate mass loss
-mass_loss <- calculate_compositional_mass_loss(data_A, data_B)
+mass_loss <- lost_mass(data_A, data_B)
 print(mass_loss)
 
 # Test Function 2: Simulate decrement
-result <- simulate_compositional_decrement(
+result <- simulate_decrement(
   data_A = data_A,
   data_B = data_B,
   decrement_steps = c(Protein = 0.1, Lipid = 0.01, Ash = 1, Carbs = 1)
@@ -124,6 +124,6 @@ install()       # Install package locally
 
 4. **To see package help**:
    ```r
-   ?calculate_compositional_mass_loss
-   ?simulate_compositional_decrement
+   ?lost_mass
+   ?simulate_decrement
    ```

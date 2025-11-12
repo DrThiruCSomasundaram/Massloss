@@ -26,7 +26,7 @@ data_B <- data.frame(
 )
 
 # Calculate mass loss for each element
-mass_loss_result <- calculate_compositional_mass_loss(data_A, data_B, reference_row = 1)
+mass_loss_result <- lost_mass(data_A, data_B, reference_row = 1)
 print("Mass Loss Results (%):")
 print(mass_loss_result)
 
@@ -42,7 +42,7 @@ data_A_single <- data_A  # Uses the same data_A from Example 1
 data_B_single <- data_B  # Uses the same data_B from Example 1
 
 # Simulate with custom decrement steps (similar to your code)
-result <- simulate_compositional_decrement(
+result <- simulate_decrement(
   data_A = data_A_single,
   data_B = data_B_single,
   reference_row = 1,

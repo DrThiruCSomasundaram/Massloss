@@ -19,8 +19,8 @@
 #'                      Lipid = c(8, 7, 9),
 #'                      Ash = c(4, 3, 5),
 #'                      Carbs = c(73, 76, 70))
-#' result <- calculate_compositional_mass_loss(data_A, data_B)
-calculate_compositional_mass_loss <- function(data_A, data_B, reference_row = 1) {
+#' result <- lost_mass(data_A, data_B)
+lost_mass <- function(data_A, data_B, reference_row = 1) {
   # Convert to data frame if needed
   if (!is.data.frame(data_A)) {
     data_A <- as.data.frame(data_A)
@@ -94,11 +94,11 @@ calculate_compositional_mass_loss <- function(data_A, data_B, reference_row = 1)
 #' data_B <- data.frame(Protein = 15, Lipid = 8, Ash = 4, Carbs = 73)
 #' 
 #' # With custom decrement steps
-#' result <- simulate_compositional_decrement(
+#' result <- simulate_decrement(
 #'   data_A, data_B, 
 #'   decrement_steps = c(Protein = 0.1, Lipid = 0.01, Ash = 0.1, Carbs = 1)
 #' )
-simulate_compositional_decrement <- function(data_A, data_B, 
+simulate_decrement <- function(data_A, data_B, 
                                              reference_row = 1,
                                              decrement_steps = NULL,
                                              tolerance = NULL,
@@ -265,17 +265,17 @@ simulate_compositional_decrement <- function(data_A, data_B,
 #'
 #' Filter simulated compositional data based on ranges (e.g., mean ± SD).
 #' This is a helper function that works with the output of 
-#' \code{simulate_compositional_decrement()}.
+#' \code{simulate_decrement()}.
 #'
 #' @param simulated_data Data frame with simulated combinations (from 
-#'   \code{simulate_compositional_decrement()$simulated_data}).
+#'   \code{simulate_decrement()$simulated_data}).
 #' @param ranges Named list of ranges. Each element should be a named vector 
 #'   with 'min' and 'max' values, or a data frame with min/max columns.
 #' @return Filtered data frame matching the specified ranges.
 #' @export
 #' @examples
-#' # After running simulate_compositional_decrement()
-#' # result <- simulate_compositional_decrement(data_A, data_B)
+#' # After running simulate_decrement()
+#' # result <- simulate_decrement(data_A, data_B)
 #' # 
 #' # Define ranges (e.g., mean ± SD)
 #' # ranges <- list(

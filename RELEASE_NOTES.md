@@ -50,10 +50,10 @@ data_B <- data.frame(
 )
 
 # Calculate mass loss
-mass_loss <- calculate_compositional_mass_loss(data_A, data_B)
+mass_loss <- lost_mass(data_A, data_B)
 
 # Simulate decrement and find best match
-result <- simulate_compositional_decrement(
+result <- simulate_decrement(
   data_A = data_A,
   data_B = data_B,
   decrement_steps = c(Protein = 0.1, Lipid = 0.01, Ash = 1, Carbs = 1)

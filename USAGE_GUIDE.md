@@ -28,7 +28,7 @@ data_B <- data.frame(
 )
 
 # Calculate mass loss
-mass_loss <- calculate_compositional_mass_loss(data_A, data_B, reference_row = 1)
+mass_loss <- lost_mass(data_A, data_B, reference_row = 1)
 print(mass_loss)
 ```
 
@@ -53,7 +53,7 @@ data_B_multi <- data.frame(
 )
 
 # Use first row of A as reference, calculate for all rows of B
-mass_loss_multi <- calculate_compositional_mass_loss(data_A_multi, data_B_multi, reference_row = 1)
+mass_loss_multi <- lost_mass(data_A_multi, data_B_multi, reference_row = 1)
 ```
 
 ## Function 2: Simulate Compositional Decrement and Find Best Match
@@ -68,7 +68,7 @@ data_A <- data.frame(Protein = 4.21, Lipid = 0.97, Ash = 31.05, NFE = 63.72)
 data_B <- data.frame(Protein = 3.5, Lipid = 0.8, Ash = 28.0, NFE = 67.7)
 
 # Simulate with custom decrement steps (like your code)
-result <- simulate_compositional_decrement(
+result <- simulate_decrement(
   data_A = data_A,
   data_B = data_B,
   reference_row = 1,
@@ -97,7 +97,7 @@ NFE_rng <- data.frame(nfe_min = 60.0, nfe_max = 67.0)
 ASH_rng <- data.frame(ash_min = 28.0, ash_max = 34.0)
 
 # Run simulation
-result <- simulate_compositional_decrement(
+result <- simulate_decrement(
   data_A = data_A,
   data_B = data_B,
   decrement_steps = c(Protein = 0.1, Lipid = 0.01, Ash = 1, NFE = 1)
@@ -121,7 +121,7 @@ tolerance_ranges <- list(
   NFE = c(3.0, 3.0)       # ±3.0
 )
 
-result_range <- simulate_compositional_decrement(
+result_range <- simulate_decrement(
   data_A = data_A,
   data_B = data_B,
   decrement_steps = c(Protein = 0.1, Lipid = 0.01, Ash = 1, NFE = 1),
@@ -152,10 +152,10 @@ library(Massloss)
 
 # Step 3: Calculate mass loss (if you have a target composition)
 # target_HT <- data.frame(Protein = 3.5, Lipid = 0.8, Ash = 28.0, NFE = 67.7)
-# mass_loss_HT <- calculate_compositional_mass_loss(mean_HT, target_HT, reference_row = 1)
+# mass_loss_HT <- lost_mass(mean_HT, target_HT, reference_row = 1)
 
 # Step 4: Simulate decrements
-# result <- simulate_compositional_decrement(
+# result <- simulate_decrement(
 #   data_A = mean_HT,
 #   data_B = target_HT,
 #   reference_row = 1,
