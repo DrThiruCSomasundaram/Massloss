@@ -1,6 +1,6 @@
 # Massloss R Package
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17586165.svg)](https://doi.org/10.5281/zenodo.17586165)
 
 An R package for analyzing mass loss data. This package provides functions for processing, analyzing, and visualizing mass loss measurements.
 
@@ -68,7 +68,7 @@ If you use this package in your research, please cite it as:
   title = {Massloss: An R Package for Mass Loss Analysis},
   version = {0.1.0},
   year = {2025},
-  doi = {10.5281/zenodo.XXXXXXX},
+  doi = {10.5281/zenodo.17586165},
   url = {https://github.com/DrThiruCSomasundaram/Massloss}
 }
 ```

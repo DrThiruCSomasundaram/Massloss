@@ -9,6 +9,7 @@ citEntry(entry = "Manual",
          year = 2025,
          version = "0.1.0",
          url = "https://github.com/DrThiruCSomasundaram/Massloss",
+         doi = "10.5281/zenodo.17586165",
          textVersion = paste("Soma, T. and Francis, D. (2025). Massloss: An R Package for Mass Loss Analysis.",
-                            "R package version 0.1.0. https://github.com/DrThiruCSomasundaram/Massloss")
+                            "R package version 0.1.0. https://doi.org/10.5281/zenodo.17586165")
 )
